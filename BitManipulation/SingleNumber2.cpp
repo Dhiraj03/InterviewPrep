@@ -1,6 +1,9 @@
-/* Given an array where every element except one appears twice,
-find the element that occurs once.
-Appraoch - XOR all elements of the array, return th result (Since a ^ a =0)
+/* Given an array where each element except once, appears thrice,
+return the element that occurs once.
+Approach :
+Every bit is counted thrice for all elements except one.
+Find the total count of set ith bits for every number of the array - and mod by 3
+Keep adding the ith power of this to the result.
 */
 
 int Solution::singleNumber(const vector<int> &A)
