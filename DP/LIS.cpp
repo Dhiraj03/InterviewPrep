@@ -5,7 +5,7 @@ subsequence in arr[0...i] and includes arr[i].
 dp[i] for all i = 1, initially,
 from i = 1 to n-1
 For every i, run a loop from 0 to i-1, and check whether that element is greater than the counter element
-if it is - and dp[j] + 1 >  dp[i], dp[i];
+if it is - and dp[j] + 1 >  dp[i], dp[i] = dp[j] +1;
 return the maximum value in dp
 */
 class Solution
